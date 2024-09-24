@@ -34,6 +34,7 @@ This project analyzes hotel booking data to answer various business-related ques
 ```sql
 SELECT count(*) AS TOTAL_BOOKINGS FROM booking;
 ```
+![image](https://github.com/user-attachments/assets/8edb0330-c3b5-4c83-af48-751f0c9d2f5a)
 
 ---
 
@@ -49,6 +50,7 @@ SELECT
     ROUND(CAST(CANCELLED_BOOKINGS.TOTAL_CANCELLATION AS NUMERIC) * 100 / CAST(TOTAL_BOOKINGS.TOTAL_BOOKING AS NUMERIC), 2) AS CANCELLATION_RATE
 FROM TOTAL_BOOKINGS, CANCELLED_BOOKINGS;
 ```
+![image](https://github.com/user-attachments/assets/edf8aef5-7c8c-4f4f-8760-0f26f6b9e5e7)
 
 ---
 
@@ -60,6 +62,7 @@ SELECT HOTEL,
 FROM BOOKING
 GROUP BY HOTEL;
 ```
+![image](https://github.com/user-attachments/assets/fa4de1de-fa62-49c7-af2b-6ae2a214cb90)
 
 ---
 
@@ -71,6 +74,7 @@ GROUP BY HOTEL
 ORDER BY TOTAL_REVENUE DESC 
 LIMIT 1;
 ```
+![image](https://github.com/user-attachments/assets/d34c6479-05e5-456d-8778-976aa6756f02)
 
 ---
 
@@ -82,6 +86,7 @@ GROUP BY COUNTRY
 ORDER BY TOTAL_CONTRIBUTIONS DESC 
 LIMIT 5;
 ```
+![image](https://github.com/user-attachments/assets/e6b23a40-9186-4fb4-b84b-124987d00120)
 
 ---
 
@@ -93,6 +98,7 @@ WHERE MEAL <> 'Undefined'
 GROUP BY MEAL
 ORDER BY MEAL_COUNT DESC;
 ```
+![image](https://github.com/user-attachments/assets/a86013e3-3dca-4fbb-a021-0965c6763a6e)
 
 ---
 
@@ -113,6 +119,7 @@ SELECT DEPOSIT_TYPE, ((BY_DEPOSIT_CANCEL)*100/CANCEL_BOOKINGS) AS CANCELLED
 FROM CANCEL_BY_DEPOSIT, TOTAL_CANCEL_BOOKINGS
 ORDER BY CANCELLED DESC;
 ```
+![image](https://github.com/user-attachments/assets/e0cf9872-227e-43c7-b091-e73db9c9ba90)
 
 ---
 
@@ -123,6 +130,7 @@ FROM BOOKING
 GROUP BY MARKET_SEGMENT
 ORDER BY SEGMENT_COUNT DESC;
 ```
+![image](https://github.com/user-attachments/assets/12887e0c-5b29-43dd-87e3-83557dc3c5ac)
 
 ---
 
@@ -144,6 +152,7 @@ FROM BOOKING
 GROUP BY RESERVATION_STATUS, YEAR
 ORDER BY YEAR DESC;
 ```
+![image](https://github.com/user-attachments/assets/6f7e5639-f9e2-4d1d-be19-6a70dd183ec3)
 
 ---
 
@@ -154,6 +163,7 @@ FROM BOOKING
 GROUP BY EMAIL_DOMAIN
 ORDER BY DOMAIN_COUNT DESC;
 ```
+![image](https://github.com/user-attachments/assets/bb800512-c0d6-4080-a921-8403301b68f4)
 
 ---
 
