@@ -28,6 +28,28 @@ This project analyzes hotel booking data to answer various business-related ques
 
 ---
 
+```sql
+DROP TABLE IF EXISTS booking;
+
+CREATE TABLE booking (
+    booking_date date,
+    hotel text,
+    is_canceled int,
+    adults int,
+    children int,
+    meal text,
+    country text,
+    market_segment text,
+    deposit_type text,
+    agent int,
+    price numeric,
+    car_parking int,
+    reservation_status text,
+    register_name text,
+    email text,
+    weekend_nights int
+);
+```
 ## Business Problems and Solutions
 
 ### 1. Count the total number of bookings
